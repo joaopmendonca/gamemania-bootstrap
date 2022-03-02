@@ -16,95 +16,75 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <!-- Header -->
+<div class="container-fluid">
+    <header class="row" id="header">
+        <div id="logo-container">
+            <img src="img/joystick-icon.svg" alt="Joystick-icon" id="logo">
+            <h1>Game</h1>
+            <h1 id="logo-color">Mania</h1>
+        </div>
+        <p>Produtos e Serviços para o público Gamer Retrô</p>
+    </header>
+    <nav id="navbar" class="container">
+        <div class="row justify-content-center">
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </nav>
 
-    <div class="container-fluid">
-        <header class="row" id="header">
-            <div id="logo-container">
-                <img src="img/joystick-icon.svg" alt="Joystick-icon" id="logo">
-                <h1>Game</h1>
-                <h1 id="logo-color">Mania</h1>
-            </div>
-            <p>Produtos e Serviços para o público Gamer Retrô</p>
-        </header>
-
-        <nav id="navbar" class="container">
-            <div class="row justify-content-center">
-                <!-- <a href="#">Home</a>
-                    <a href="#">Home</a>
-                    <a href="#">Serviços</a>
-                    <a href="#">Galeria</a>
-                    <a href="#">Contato</a> -->
-                <div class="col-1 menu-btn ">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="col-1 menu-btn">
-                    <a href="produtos.html">Produtos</a>
-                </div>
-                <div class="col-1 menu-btn">
-                    <a href="servicos.html">Serviços</a>
-                </div>
-                <div class="col-1 menu-btn">
-                    <a href="galeria.html">Galeria</a>
-                </div>
-                <div class="col-1 menu-btn">
-                    <a href="contato.html">Contato</a>
-                </div>
-
-            </div>
-        </nav>
-
+</div>
+<!--Produtos em Destaques-->
+<div class="container" id="gallery-container">
+    <div class="col-12">
+        <!--Utiliza 12 espaços do bootstrap-->
+        <h2>Serviços</h2>
     </div>
-    <!--Produtos em Destaques-->
-    <div class="container" id="gallery-container">
-        <div class="col-12">
-            <!--Utiliza 12 espaços do bootstrap-->
-            <h2>Serviços</h2>
+    <div class="row gx-md-5">
+        <!--Somente em resoluções md pra cima o gx será de 5-->
+        <!--espaçamento horizontal-->
+        <div class="col-2">
+            <!--Responsividade-->
+            <i class="bi bi-cash-coin" id="services-icons"></i>
         </div>
-        <div class="row gx-md-5">
-            <!--Somente em resoluções md pra cima o gx será de 5-->
-            <!--espaçamento horizontal-->
-            <div class="col-2">
-                <!--Responsividade-->
-                <i class="bi bi-cash-coin" id="services-icons"></i>
-            </div>
-            <div class="col-9">
-                <h3>Compramos Seu Game Usado</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, impedit voluptatibus nostrum error sapiente non facilis. Voluptates omnis esse ipsa? Tenetur alias est minima aspernatur totam similique, deleniti vero! Obcaecati.</p>
-            </div>
-        </div>
-        <div class="row gx-md-5">
-            <!--Somente em resoluções md pra cima o gx será de 5-->
-            <!--espaçamento horizontal-->
-            <div class="col-2">
-                <!--Responsividade-->
-                <i class="bi bi-tools" id="services-icons"></i>
-            </div>
-            <div class="col-9">
-                <h3>Assistência Técnica</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, impedit voluptatibus nostrum error sapiente non facilis. Voluptates omnis esse ipsa? Tenetur alias est minima aspernatur totam similique, deleniti vero! Obcaecati.</p>
-            </div>
+        <div class="col-9">
+            <h3>Compramos Seu Game Usado</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, impedit voluptatibus nostrum error sapiente non facilis. Voluptates omnis esse ipsa? Tenetur alias est minima aspernatur totam similique, deleniti vero! Obcaecati.</p>
         </div>
     </div>
-    </div>
-    <!--Footer-->
-    <footer class="container">
-        <p class="secundary-color">Nos encontre nas redes sociais</p>
-        <div class="row justify-content-center" id="social-icons-container">
-            <div class="col-1">
-                <a href="#"><i class="bi bi-facebook secondary-color"></i></a>
-            </div>
-            <div class="col-1">
-                <a href="#"><i class="bi bi-instagram secondary-color"></i></a>
-            </div>
-            <div class="col-1">
-                <a href="#"><i class="bi bi-twitter secondary-color"></i></a>
-            </div>
+    <div class="row gx-md-5">
+        <!--Somente em resoluções md pra cima o gx será de 5-->
+        <!--espaçamento horizontal-->
+        <div class="col-2">
+            <!--Responsividade-->
+            <i class="bi bi-tools" id="services-icons"></i>
         </div>
-        <p class="secondary-color">GameMania&copy 2022</p>
+        <div class="col-9">
+            <h3>Assistência Técnica</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, impedit voluptatibus nostrum error sapiente non facilis. Voluptates omnis esse ipsa? Tenetur alias est minima aspernatur totam similique, deleniti vero! Obcaecati.</p>
+        </div>
+    </div>
+</div>
+</div>
+<!--Footer-->
+<footer class="container">
+    <p class="secundary-color">Nos encontre nas redes sociais</p>
+    <div class="row justify-content-center" id="social-icons-container">
+        <div class="col-1">
+            <a href="#"><i class="bi bi-facebook secondary-color"></i></a>
+        </div>
+        <div class="col-1">
+            <a href="#"><i class="bi bi-instagram secondary-color"></i></a>
+        </div>
+        <div class="col-1">
+            <a href="#"><i class="bi bi-twitter secondary-color"></i></a>
+        </div>
+    </div>
+    <p class="secondary-color">GameMania&copy 2022</p>
 
-    </footer>
+</footer>
 
 </body>
 
