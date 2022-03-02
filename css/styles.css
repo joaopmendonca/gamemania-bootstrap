@@ -188,3 +188,9 @@ footer p {
 a:hover i {
     color: #C1B696;
 }
+
+footer .newsletter {
+    text-align: center;
+}
+
+footer .newsletter button {}
